@@ -22,7 +22,9 @@ We'd suggest closing other windows not relating to this challenge as we would li
 │   ├── ds18b20_driver.h  # DS18B20 temperature sensor driver API
 │   ├── ds18b20_driver.c  # ... and mock implementation
 │   ├── radio_driver.h    # Wireless radio transceiver driver API
-│   └── radio_driver.c    # ... and mock implementation
+│   ├── radio_driver.c    # ... and mock implementation
+│   ├── microcontroller.h # MCU API
+│   └── microcontroller.c # ... and mock implementation
 ├── .gitignore            # Git ignore rules
 └── README.md             # This file
 ```

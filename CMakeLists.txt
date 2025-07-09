@@ -21,6 +21,7 @@ set(SOURCES
     src/main.c
     vendor/ds18b20_driver.c
     vendor/radio_driver.c
+    vendor/microcontroller.c
 )
 
 # Create executable

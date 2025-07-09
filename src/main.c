@@ -3,6 +3,9 @@
 #include <string.h>
 #include "ds18b20_driver.h"
 #include "radio_driver.h"
+#include "microcontroller.h"
+
+#define GPIO_PIN_1WIRE 15
 
 int main(void) {
     printf("Hiring Firmware Skeleton C Project\n");

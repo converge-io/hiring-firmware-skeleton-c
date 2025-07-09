@@ -2,6 +2,8 @@
 
 A firmware skeleton C project which serves as the basis for a technical interview.
 
+The firmware is for a hypothetical device which can take temperature measurements and transmit them upstream.
+The hypothetical device has a DS18B20 for temperature measurement and an imaginary radio peripheral for communication.
 
 ## What to expect
 

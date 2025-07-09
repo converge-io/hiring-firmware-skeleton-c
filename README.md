@@ -20,6 +20,7 @@ We'd suggest closing other windows not relating to this challenge as we would li
 │   └── main.c            # Main C source file
 ├── vendor/
 │   ├── ds18b20_driver.h  # DS18B20 temperature sensor driver API
+│   ├── ds18b20_driver.c  # ... and mock implementation
 │   └── radio_driver.h    # Wireless radio transceiver driver API
 ├── .gitignore            # Git ignore rules
 └── README.md             # This file

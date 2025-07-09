@@ -19,10 +19,14 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/vendor)
 # Source files
 set(SOURCES
     src/main.c
+    vendor/ds18b20_driver.c
 )
 
 # Create executable
 add_executable(${PROJECT_NAME} ${SOURCES})
+
+# Link with math library (required for math.h functions used in DS18B20 driver)
+target_link_libraries(${PROJECT_NAME} m)
 
 # Install target
 install(TARGETS ${PROJECT_NAME} DESTINATION bin)

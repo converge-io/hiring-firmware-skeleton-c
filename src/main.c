@@ -27,9 +27,18 @@ int main(void) {
     printf("- Power management: Sleep/Standby/Active modes\n");
     printf("- Security: WEP/WPA/AES encryption support\n");
     printf("- Network: Auto-retry with acknowledgment\n\n");
+
+    printf("Integration Example:\n");
+    printf("--------------------\n");
+    printf("1. Initialize DS18B20 temperature sensor\n");
+    printf("2. Initialize radio module with network configuration\n");
+    printf("3. Read temperature data from sensor\n");
+    printf("4. Package data into radio packet with JSON payload\n");
+    printf("5. Transmit packet with auto-retry and acknowledgment\n");
+    printf("6. Enter low-power sleep mode between readings\n\n");
     
-    // Example integration workflow (commented out since this is a skeleton)
-    /*
+    printf("Ready for temperature monitoring and wireless data transmission!\n");
+    
     // Initialize temperature sensor
     ds18b20_handle_t temp_sensor;
     ds18b20_temperature_t temp_data;
@@ -82,24 +91,13 @@ int main(void) {
                     }
                 }
                 
-                // Sleep for 60 seconds
+                // Try to keep to a once-per-second reporting cadence.
                 radio_set_power_state(RADIO_POWER_SLEEP);
-                delay_ms(60000);
+                delay_ms(1000);
                 radio_set_power_state(RADIO_POWER_IDLE);
             }
         }
     }
-    */
-    
-    printf("Integration Example:\n");
-    printf("--------------------\n");
-    printf("1. Initialize DS18B20 temperature sensor\n");
-    printf("2. Initialize radio module with network configuration\n");
-    printf("3. Read temperature data from sensor\n");
-    printf("4. Package data into radio packet with JSON payload\n");
-    printf("5. Transmit packet with auto-retry and acknowledgment\n");
-    printf("6. Enter low-power sleep mode between readings\n\n");
-    
-    printf("Ready for temperature monitoring and wireless data transmission!\n");
+
     return EXIT_SUCCESS;
 }

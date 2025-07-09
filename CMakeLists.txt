@@ -20,6 +20,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/vendor)
 set(SOURCES
     src/main.c
     vendor/ds18b20_driver.c
+    vendor/radio_driver.c
 )
 
 # Create executable

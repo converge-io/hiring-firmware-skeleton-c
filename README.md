@@ -1,6 +1,14 @@
 # Hiring Firmware Skeleton C Project
 
-A firmware skeleton C project demonstrating a reproducible build setup using Nix flakes, CMake, and clang.
+A firmware skeleton C project which serves as the basis for a technical interview.
+
+
+## What to expect
+
+The interview will consist of a 1.5h pair-programming session in which you will make changes to this codebase based on problems we will give you.
+We'll be exploring this with you, so it should be very much a dialogue, but you'll be doing most of the programming 😉.
+Please make sure you have at least sorted your development environment beforehand, and are able to share your screen on Zoom.
+We'd suggest closing other windows not relating to this challenge as we would like to see the whole screen -- sometimes you might need to look something up, and we'd like to have context of that thing too!
 
 ## Project Structure
 
